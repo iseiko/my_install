@@ -2,8 +2,7 @@
 
 # ----- #
 
-DIR="~/my_install"
-CONF="$DIR/configs"
+CONF="~/my_install/configs"
 UCONF="~/.config"
 WALL="$CONF/pictures/Wallpapers"
 UWALL="~/Pictures/wallpapers"
@@ -36,23 +35,6 @@ if ! is_paru_installed; then
 
 else
 	echo "paru is already installed!"
-	echo "skipping..."
-fi
-
-# install stow, needed to create symlinks 
-
-is_stow_installed() {
-	pacman -Qi "stow" &> /dev/null
-}
-
-if ! is_stow_installed; then 
-	echo "stow is not installed"
-	echo "installing stow"
-	paru -S --noconfirm stow
-	echo "stow installed"
-	echo "next!"
-else
-	echo "stow is already installed!"
 	echo "skipping..."
 fi
 
