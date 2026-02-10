@@ -6,6 +6,7 @@ CONF="~/.config"
 
 rm -rf $CONF/hypr $CONF/zsh $CONF/kitty $CONF/ranger $CONF/starship.toml ~/Pictures 
 
+cd ~
 cd ~/my_install/configs 
 
 stow -t ~ hypr
