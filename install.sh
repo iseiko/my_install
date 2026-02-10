@@ -2,5 +2,5 @@
 
 # reffer to the scripts directory 
 #
-cd scripts
+cd ~/my_install/scripts
 ./begin.sh
