@@ -16,3 +16,6 @@ stow -t ~ ranger
 stow -t ~ starship 
 stow -t ~ Pfp
 stow -t ~ Wallpapers
+stow -t ~ dunst
+stow -t ~ neovim
+stow -t ~ waybar 

@@ -1,0 +1,82 @@
+{ 
+    // position and layout config
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 1,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 3,
+    "margin-left": 3,
+    "margin-right": 3,
+
+    // modules position config
+
+    "modules-left": [
+        "hyprland/worksapces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "hyprland/language",
+        "custom/separator#line",
+        "tray",
+        "custom/separator#line",
+        "pipewire"
+    ],
+
+    // modules config 
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-click-down": "hyprctl dispatch worksapce e+1",
+        "persistent-workspaces": {
+            "*": 4
+        },
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "custom/separator#line": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%I:%M %p}"
+    },
+    "pipewire": {
+        "format": "{icon}",
+        "format-muted": "󰖁",
+        "on-click": "flatpak run com.saivert.pwvucontrol",
+        "on-click-right": "playerctl play-pause",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                "󰕾",
+                ""
+            ],
+            "ignored-sinks": [
+                "Easy Effects Sink"
+            ]
+        }
+    },
+    "tray": {
+        "spacing": 10,
+        "on-click-right": "kill"
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-pt": "BR",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    }
+}
