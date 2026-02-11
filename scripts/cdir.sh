@@ -19,3 +19,4 @@ stow -t ~ Wallpapers
 stow -t ~ dunst
 stow -t ~ neovim
 stow -t ~ waybar 
+stow -t ~ wpaperd
