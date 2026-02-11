@@ -4,7 +4,7 @@
 
 sudo pacman -Syu 
 
-sudo systemctl enable --now iwd.service dhcpcd hyprpolklitagent pipewire  pipewire-pulse wireplumber bluetooth 
+sudo systemctl enable --now iwd.service dhcpcd hyprpolklitagent pipewire  pipewire-pulse wireplumber bluetooth sshd
 
 sudo systemctl enable ly@tty1.service 
 
