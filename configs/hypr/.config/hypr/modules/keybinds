@@ -11,11 +11,12 @@ bind = SUPER SHIFT, Q, exec, hyprctl kill
 bind = SUPER SHIFT, D, exec, hyprctl dispatch dpms
 bind = SUPER, Print, exec, grim -g "$(slurp)" - | swappy -f - 
 bind = , Print, exec, grim - | swappy -f -
+bind = SUPER, SPACE, exec, hyprlauncher
 
 # --- OPEN APPS --- #
 
 bind = SUPER, RETURN, exec, kitty
-bind = SUPER, B, exec, zen-browser
+bind = SUPER, B, exec, qutebrowser
 bind = SUPER, E, exec, kitty -e ranger
 bind = SUPER, D, exec, vesktop
 

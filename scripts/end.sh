@@ -4,6 +4,8 @@
 
 sudo pacman -Syu 
 
+sudo systemctl enable --now iwd.service dhcpcd hyprpolklitagent pipewire  pipewire-pulse wireplumber bluetooth 
+
 sudo systemctl enable ly@tty1.service 
 
 sudo systemctl soft-reboot
